@@ -1,0 +1,14 @@
+POST http://localhost:3000/api/services
+Content-Type: application/json
+
+{
+"name": "Algun Serviço 2",
+"description": "Alguma descrição 2",
+"price": 1400,
+"image": "https://unsplash.com/pt-br/fotografias/uma-pessoa-nadando-no-oceano-com-uma-camera-NhWxAIs61MM"
+}
+
+###
+
+GET http://localhost:3000/api/services
+Content-Type: application/json
