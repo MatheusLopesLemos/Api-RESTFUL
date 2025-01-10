@@ -12,3 +12,52 @@ Content-Type: application/json
 
 GET http://localhost:3000/api/services
 Content-Type: application/json
+
+###
+
+GET http://localhost:3000/api/services/66fc4b52c16957cd276f2227
+
+###
+
+DELETE  http://localhost:3000/api/services/66fc4cef5be272b3c6aa4352
+
+###
+
+PUT http://localhost:3000/api/services/677ff15988f4bb52d4c60e86
+Content-Type: application/json
+
+{
+"name": "Teste Atualização",
+"description": "Alguma descrição 2",
+"price": 2400,
+"image": "https://unsplash.com/pt-br/fotografias/uma-pessoa-nadando-no-oceano-com-uma-camera-NhWxAIs61MM"
+}
+
+###
+
+POST http://localhost:3000/api/parties
+Content-Type: application/json
+
+{
+    "title": "Meu evento 2",
+    "author": "Matheus",
+    "description": "Aniversário",
+    "budget": 3000,
+    "image": "https://unsplash.com/pt-br/fotografias/uma-pessoa-nadando-no-oceano-com-uma-camera-NhWxAIs61MM",
+    "services": [
+
+        {
+            "name": "Algun Serviço 1",
+            "description": "Alguma descrição 2",
+            "price": 3000,
+            "image": "https://unsplash.com/pt-br/fotografias/uma-pessoa-nadando-no-oceano-com-uma-camera-NhWxAIs61MM"
+        },
+
+        {
+            "name": "Algun Serviço 2",
+            "description": "Alguma descrição 2",
+            "price": 1600,
+            "image": "https://unsplash.com/pt-br/fotografias/uma-pessoa-nadando-no-oceano-com-uma-camera-NhWxAIs61MM"
+        }
+    ]
+}
