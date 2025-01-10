@@ -95,7 +95,7 @@ const serviceController = {
             res.status(200).json({service, msg: "Serviço atualizado com sucesso"}) 
             
         } catch (error) {
-            
+            console.log(error)
         }
     }
 

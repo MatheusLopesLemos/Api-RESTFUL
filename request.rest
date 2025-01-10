@@ -61,3 +61,45 @@ Content-Type: application/json
         }
     ]
 }
+
+###
+
+GET http://localhost:3000/api/parties
+
+###
+
+GET http://localhost:3000/api/parties/678004eded0d62e2ce71c354
+
+###
+
+DELETE  http://localhost:3000/api/parties/678004eded0d62e2ce71c35e
+
+###
+
+PUT  http://localhost:3000/api/parties/67800638ec990639a1fcbc35
+Content-Type: application/json
+
+{
+    "title": "Meu evento 2",
+    "author": "Matheus",
+    "description": "Aniversário",
+    "budget": 10000,
+    "image": "https://unsplash.com/pt-br/fotografias/uma-pessoa-nadando-no-oceano-com-uma-camera-NhWxAIs61MM",
+    "services": [
+
+        {
+            "name": "Algun Serviço 1",
+            "description": "Alguma descrição 2",
+            "price": 3000,
+            "image": "https://unsplash.com/pt-br/fotografias/uma-pessoa-nadando-no-oceano-com-uma-camera-NhWxAIs61MM"
+        },
+
+        {
+            "name": "Algun Serviço 2",
+            "description": "Alguma descrição 2",
+            "price": 1600,
+            "image": "https://unsplash.com/pt-br/fotografias/uma-pessoa-nadando-no-oceano-com-uma-camera-NhWxAIs61MM"
+        }
+    ]
+}
+
